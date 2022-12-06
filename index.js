@@ -70,7 +70,7 @@ const zooAnimals = [
   function animalNames(ZA){
     let displayNames = [];
     ZA.forEach(function(item){
-    displayNames.push(`name:${item.animal_name}, scientific: ${item.scientific_name}`)
+    displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)
     });
   return displayNames
   }

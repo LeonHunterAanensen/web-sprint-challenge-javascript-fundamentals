@@ -203,14 +203,10 @@ function greeting(fn,ln){
 */
 
 function CuboidMaker(object){
-  class cuboid{  
-  constructor(object) {
-    this.length = object.length;
-    this.width = object.width;
-    this.height = object.height;
+  this.length = object.length
+  this.width  = object.width
+  this.height = object.height
   }
-}
-}
 
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴

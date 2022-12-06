@@ -144,7 +144,7 @@ USApop(zooAnimals)// complete at "T2R4P3.5"
   function consume(a, b ,cb){
     return cb(a,b)
   }
- 
+ //"T2R5S1P1"
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
 
@@ -153,8 +153,9 @@ USApop(zooAnimals)// complete at "T2R4P3.5"
  2. Return the sum of those numbers
  */
 
-function add(/*Your Code Here */){
-    /*Your Code Here*/
+function add(n1,n2){
+  let sum = n1+n2  
+  return sum
   }
 
 
@@ -163,8 +164,9 @@ function add(/*Your Code Here */){
 2. Return the product of those numbers
 */
 
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
+function multiply(n1,n2){
+   let product = n1 * n2
+   return product
   }
 
 
@@ -174,8 +176,8 @@ function multiply(/*Your Code Here */){
 💡 NOTE: The string returned must match the format above or the test will not pass!
 */
 
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
+function greeting(fn,ln){
+   return `Hello ${fn} ${ln}, nice to meet you!`
   }
   
   

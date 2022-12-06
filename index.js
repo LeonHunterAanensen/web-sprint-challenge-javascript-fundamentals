@@ -202,7 +202,7 @@ function greeting(fn,ln){
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
-let X = {length: 15,width: 30,height: 20}
+let cuboid = {length: 4,width: 5,height: 5}
 function CuboidMaker(object){
   CuboidMaker.prototype.CuboidMaker= function(object){
   this.length = object.length
@@ -213,7 +213,7 @@ function CuboidMaker(object){
   CuboidMaker.prototype.volume= function(object){
     this.volume = this.height * this.width * this.length
     console.log(this.volume)
-  return this.volume
+    return this.volume
   }
   CuboidMaker.prototype.surfaceArea= function(object){
     this.surfaceArea= 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height))
@@ -222,9 +222,9 @@ function CuboidMaker(object){
   }
 CuboidMaker.prototype.CuboidMaker(object)
 }
-CuboidMaker(X);
-CuboidMaker.prototype.volume(X)
-CuboidMaker.prototype.surfaceArea(X)
+CuboidMaker(cuboid);
+CuboidMaker.prototype.volume(cuboid)
+CuboidMaker.prototype.surfaceArea(cuboid)
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   💡 NOTE: Formula for cuboid volume: length * width * height   
@@ -259,10 +259,25 @@ CuboidMaker.prototype.surfaceArea(X)
 
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the new keyword to use our CuboidMakerTwo class.
- 
+const cuboidTwo = {length: 4,width: 5,height: 5}
 class CuboidMakerTwo{
-
+constructor(object){
+  this.length = object.length
+  this.width  = object.width
+  this.height = object.height
 }
+volume(){
+  this.volume = this.height * this.width * this.length
+  console.log(this.volume)
+  return this.volume
+}
+surfaceArea(){
+  this.surfaceArea= 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height))
+  console.log(this.surfaceArea)
+  return this.surfaceArea
+}
+}
+console.log(new CuboidMakerTwo(cuboidTwo))
 
 
 

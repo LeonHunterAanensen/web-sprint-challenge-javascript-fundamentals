@@ -130,7 +130,7 @@ lowPopulationAnimals(zooAnimals) // complete at "T2R3P1"
   console.log(pop)
     return pop
   }
-USApop(zooAnimals)//"T2R4P3.5"
+USApop(zooAnimals)// complete at "T2R4P3.5"
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
@@ -141,8 +141,8 @@ USApop(zooAnimals)//"T2R4P3.5"
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(a, b ,cb){
+    return cb(a,b)
   }
  
   

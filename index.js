@@ -125,8 +125,9 @@ lowPopulationAnimals(zooAnimals) // complete at "T2R3P1"
   */
 
   function USApop(ZA){
-    let pop = ZA.reduce(function(accumulator, item){
-      return accumulator + item.population;},0 );
+    let pop = []
+    pop.push(ZA.reduce(function(accumulator, item){
+      return accumulator + item.population;},0 ));
   console.log(pop)
   }
 USApop(zooAnimals)

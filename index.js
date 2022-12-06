@@ -213,6 +213,7 @@ function CuboidMaker(object){
   CuboidMaker.prototype.volume= function(object){
     this.volume = this.height * this.width * this.length
     console.log(this.volume)
+  return this.volume
   }
 CuboidMaker.prototype.CuboidMaker(object)
 }

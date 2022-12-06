@@ -74,7 +74,7 @@ const zooAnimals = [
     });
   return displayNames
   }
-animalNames(zooAnimals)
+animalNames(zooAnimals) //complete at "T2R1P1.5" (.5 because minor update was required due to missing space)
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -86,9 +86,15 @@ animalNames(zooAnimals)
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(ZA){
+    let ZAL = [];
+    ZA.forEach(function(item){
+    ZAL.push(`${item.animal_name}`.toLowerCase())
+    });
+    console.log(ZAL)
+    return ZAL
   }
+  lowerCaseNames(zooAnimals)
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁

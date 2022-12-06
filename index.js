@@ -16,7 +16,10 @@ function myFunction() {
 //myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// in this example of closure we see that the nested function is capable of accessing the internal constant because it is within range of scope, if we were to follow the curly brackets down we would see that
+// while it is step down from its own it is not isolated from it within another function out of range, if we were to say place internal within another function within my function without calling it, nested
+// would not be able to access it as its scope would be out of range and isolated by another set of brackets, same goes for external, if external were to be isolated within another function outside of 
+// myfunction then external would be out of range of myfunction and thus console.log(external) would not work as its scope would not be within reach of the secondary function
 
 
 
@@ -30,10 +33,14 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(int) {
+  let x = 0
+  for(let i = 1; i < int || i === int; i++){
+    x = x + i
+    }
+  return x
   }
+summation(4)
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁

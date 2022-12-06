@@ -25,15 +25,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
-
+.reduce is a function which is used to obtain a single value without returning a new array, it is often used for mathmatical formulas but can be used for many other uses.
+.map returns a new array with converted data without augmenting or changing the original arrays data it is often used for converting data sets.
+.filter also returns with a new array, it filters based off true or false, it includes data that is true in comparison to the inputed values, if an item in the array is false how ever that item will not be added to the new array
 2. Explain the difference between a callback and a higher order function.
-
+A call back function is a function that calls another funtion with paramaters from within its self, while a higher order function is a function that fully contains an entire other function or a number of entire other functions
 3. Explain what a closure is.
-
+closure is when a function reaches beyond its scope, for example a function deep within a higher order function may reach back to grab a variable or data from a function it is nested within
 4. Describe the four principles of the 'this' keyword.
-
+window binding, will either return the global object if its in node, or it will return undefined if its in strict mode, but that is only if this is not yet defined
+implicit binding, is for objects that have methods, when they are invoked it checks what 'this' is in this instance 
+explicit binding, is basically when we take 'this' and tell it exactly what it is.
+new binding, creates a new 'this' binding with a new keyword/object within the function 
 5. Why do we need super() in an extended class?
-
+you need super() in an extended class inorder to call the information pull by by extend into the new constructor by this i mean we use super to access the extended data initally after extension  
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions

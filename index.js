@@ -125,12 +125,12 @@ lowPopulationAnimals(zooAnimals) // complete at "T2R3P1"
   */
 
   function USApop(ZA){
-    let pop = []
-    pop.push(ZA.reduce(function(accumulator, item){
-      return accumulator + item.population;},0 ));
+    let pop = ZA.reduce(function(accumulator, item){
+      return accumulator + item.population;},0 );
+  console.log(pop)
     return pop
   }
-USApop(zooAnimals) //"T2R4P3"
+USApop(zooAnimals)//"T2R4P3.5"
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁

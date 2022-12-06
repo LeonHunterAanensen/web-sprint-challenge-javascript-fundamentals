@@ -105,10 +105,15 @@ animalNames(zooAnimals) //complete at "T2R1P1.5" (.5 because minor update was re
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(ZA){
+    let LP = []
+    ZA.forEach(function(){
+    LP = ZA.filter(item => item.population<5)
+    });
+    console.log(LP)
+    return LP 
   }
-  
+lowPopulationAnimals(zooAnimals)
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 

@@ -94,7 +94,7 @@ animalNames(zooAnimals) //complete at "T2R1P1.5" (.5 because minor update was re
     console.log(ZAL)
     return ZAL
   }
-  lowerCaseNames(zooAnimals)
+  lowerCaseNames(zooAnimals) //complete at "T2R2P1"
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -113,7 +113,7 @@ animalNames(zooAnimals) //complete at "T2R1P1.5" (.5 because minor update was re
     console.log(LP)
     return LP 
   }
-lowPopulationAnimals(zooAnimals)
+lowPopulationAnimals(zooAnimals) // complete at "T2R3P1"
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
@@ -124,10 +124,12 @@ lowPopulationAnimals(zooAnimals)
   💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(ZA){
+    let pop = ZA.reduce(function(accumulator, item){
+      return accumulator + item.population;},0 );
+  console.log(pop)
   }
-  
+USApop(zooAnimals)
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁

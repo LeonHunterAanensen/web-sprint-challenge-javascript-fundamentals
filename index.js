@@ -221,10 +221,10 @@ function CuboidMaker(object){
   return this.surfacearea
   }
 CuboidMaker.prototype.CuboidMaker(object)
-CuboidMaker.prototype.volume(object)
-CuboidMaker.prototype.surfacearea(object)
 }
 CuboidMaker(X);
+CuboidMaker.prototype.volume(X)
+CuboidMaker.prototype.surfacearea(X)
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   💡 NOTE: Formula for cuboid volume: length * width * height   
